@@ -1,0 +1,157 @@
+<!-- Data la tabella, creare un foglio di stile tale che:
+
+La tabella abbia un bordo di 1px di colore #263238 e sia larga la metà della pagina.
+Il titolo della tabella deve essere di colore #263238,in grassetto e grandezza 18px. 
+Aggiungere inoltre un margine per staccare il testo dalla tabella
+L'header della tabella abbia colore di sfondo #455a64 e testo bianco con peso 700.
+Le righe della tabella abbiano colore di sfondo alternato tra #eceff1 e #b0bec5.
+L'ultima riga della tabella abbia testo con peso 800 e sfondo di colore #78909c.
+Nel corpo della tabella la colonna delle entrate ha un testo di colore #003300.
+Nel corpo della tabella la colonna delle uscite ha un testo di colore #7f0000.
+I valori numerici sono allineati a destra. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Tabella</title>
+    <style>
+        table {
+            border: 1px;
+            color: #263238;
+            width: 50%;
+        }
+
+        caption {
+            color: #263238;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        thead {
+            background-color: #455a64;
+            color: white;
+            font-weight: 700;
+        }
+        tbody tr:nth-child(even){
+            background-color: #eceff1 ;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #b0bec5 ;
+        }
+        tfoot{
+            background-color: #78909c;
+            font-weight: 800;
+        }
+        tbody td.entrate{
+            color: #003300;
+            text-align: right;
+        }
+        tbody td.uscite{
+            color: #7f0000;
+            text-align: right;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section>
+        <table>
+            <caption>Tabella entrate e uscite</caption>
+            <colgroup>
+                <col>
+                <col style="background-color: green;">
+                <col style="background-color: red;">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>Mesi</th>
+                    <th>Entrate</th>
+                    <th>Uscite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gennaio</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Febbraio</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Marzo</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Aprile</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Maggio</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Giugno</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Luglio</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Agosto</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Settembre</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Ottobre</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Novembre</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+                <tr>
+                    <td>Dicembre</td>
+                    <td class="entrate">1200 euro</td>
+                    <td class="uscite">700 euro</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Totale</td>
+                    <td>14400</td>
+                    <td class="uscite">8400</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
