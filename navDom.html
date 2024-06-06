@@ -24,17 +24,16 @@
         <li>3</li>
     </ul>
     <script>
-            const html = document.documentElement;
+        const html = document.documentElement;
 
-const body = html.children[1];
-
-const ul = body.children[0];
-
-const secondElement = ul.children[1];
-
-secondElement.nextElementSibling
-
-secondElement.previousElementSibling
+        const body = html.children[1];
+        console.log(body);
+        const ul = body.children[0];
+        console.log(ul);
+        const secondElement = ul.children[1];
+        console.log(secondElement);
+        console.log(secondElement.nextElementSibling);
+        console.log(secondElement.previousElementSibling);
     </script>
 </body>
 
