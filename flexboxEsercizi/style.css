@@ -8,24 +8,29 @@ Aggiungi un'immagine della barra laterale che hai creato nella cartella come ris
 I 4 collegamenti devono avere un colore del testo (#2b2b2b) e dovrebbero cambiare in #2b2bb2 quando passi il mouse sopra di essi,
  con una transizione di 0.3 secondi. Utilizza la proprietà CSS Flexbox per gestire il layout. */
 
+
+
 .sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: space-around;
     width: 200px;
     height: 100vh;
     border: 3px solid rgb(118, 20, 20);
 
+
 }
 
 #avatar {
-    margin-top: 10px;
+
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
 
 .logo {
+    margin-top: 10px;
     background-color: red;
     border-radius: 50%;
     width: 100px;
@@ -35,7 +40,6 @@ I 4 collegamenti devono avere un colore del testo (#2b2b2b) e dovrebbero cambiar
 }
 
 .fenice {
-
     text-align: center;
     width: 100px;
     height: 80px;
