@@ -63,7 +63,7 @@ I 4 collegamenti devono avere un colore del testo (#2b2b2b) e dovrebbero cambiar
 }
 
 .footer {
-    margin: auto;
+    margin-top: auto;
     text-align: center;
 
 }
