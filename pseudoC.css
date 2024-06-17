@@ -1,0 +1,42 @@
+/* <!-- Applica alla prima lettera del primo paragrafo che trovi nel file index.html disponibile 
+al download il seguente stile:
+
+Aggiungi al blockquote delle virgolette prima e dopo il testo;
+Il link in fondo, deve cambiare colore al passaggio del mouse su di esso.
+Deve anche avere un colore diverso se è già stato visitato --> */
+
+
+blockquote::before {
+    content:'"';
+    background-color: rgba(0, 0, 0, .12);
+    padding: 8px;
+}
+blockquote::after {
+    content: '"';
+    background-color: rgba(0, 0, 0, .12);
+    padding: 8px;
+}
+
+
+p::first-letter {
+    float: left;
+    color: darkred;
+    border: 3px ridge darkgoldenrod;
+    padding: 16px;
+    background-color: gold;
+    margin: 8px;
+}
+
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:visited{
+    color: orange;
+}
+
+a:hover{
+    color: black;
+}
