@@ -55,13 +55,13 @@
             const inputName = nome.value;
             const inputLastName = cognome.value;
 
-            localStorage.setItem('email', inputMail);
-            localStorage.setItem('firstname', inputName);
-            localStorage.setItem('lastname', inputLastName);
+            sessionStorage.setItem('email', inputMail);
+            sessionStorage.setItem('firstname', inputName);
+            sessionStorage.setItem('lastname', inputLastName);
             getForm(inputName);
             
         })
-        const saveName = localStorage.setItem(firstname);
+        const saveName = sessionStorage.setItem(firstname);
         getForm(saveName);
 
     </script>
